@@ -1,0 +1,19 @@
+api:
+  insecure: true
+
+pilot:
+  token: "7a217ec4-17fd-47b1-adbd-b9447432863d"
+
+providers:
+  docker:
+    endpoint: "unix:///var/run/docker.sock"
+#  file:
+#    directory:/config
+entryPoints:
+  http:
+    address: ":80"
+
+log:
+  filePath: "/traefik.log"
+  format: json
+  level: ERROR
